@@ -8,16 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    private let beds: [Bed] = [
-        .init(title: "Aurora Borealis", image: .auroraBorealis),
-        .init(title: "Beach", image: .beach),
-        .init(title: "City", image: .city),
-        .init(title: "Garden", image: .garden),
-        .init(title: "Gothic", image: .gothic),
-        .init(title: "Library", image: .library),
-        .init(title: "Rainforest", image: .rainforest),
-        .init(title: "Zen", image: .zen),
-    ]
+    private let beds: [Bed] = Bed.beds
 
     private var currentBedIndex: Int = 0
 
