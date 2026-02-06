@@ -11,10 +11,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		382099232F24B85400C5CAEF /* Exceptions for "hsedz1" folder in "hsedz1" target */ = {
+		383B70332F35E169006584BA /* Exceptions for "hsedz1" folder in "hsedz1" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Resourses/Info.plist,
 			);
 			target = 382099102F24B85300C5CAEF /* hsedz1 */;
 		};
@@ -24,7 +24,7 @@
 		382099132F24B85300C5CAEF /* hsedz1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				382099232F24B85400C5CAEF /* Exceptions for "hsedz1" folder in "hsedz1" target */,
+				383B70332F35E169006584BA /* Exceptions for "hsedz1" folder in "hsedz1" target */,
 			);
 			path = hsedz1;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3DZAF454Q2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = hsedz1/Info.plist;
+				INFOPLIST_FILE = hsedz1/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -179,7 +179,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3DZAF454Q2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = hsedz1/Info.plist;
+				INFOPLIST_FILE = hsedz1/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
