@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CollectionViewController: UIViewController {
+final class CollectionViewController: UIViewController {
     // MARK: Properties
 
     private let beds: [Bed] = Bed.beds
@@ -20,7 +20,7 @@ class CollectionViewController: UIViewController {
         layout.scrollDirection = .vertical
 
         let collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(BedCollectionViewCell.self, forCellWithReuseIdentifier: BedCollectionViewCell.reuseIdentifier)
         return collectionView
     }()
 
@@ -49,7 +49,11 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BedCollectionViewCell.reuseIdentifier, for: indexPath) as! BedCollectionViewCell
+
+        let image = UIImage(resource: beds[indexPath.item].image)
+        cell.configure(with: image)
+        cell.backgroundColor = .orange
 
         return cell
     }
