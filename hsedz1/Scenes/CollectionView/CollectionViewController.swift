@@ -43,7 +43,7 @@ final class CollectionViewController: UIViewController {
     }
 }
 
-extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
         beds.count
     }
@@ -53,8 +53,12 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
 
         let image = UIImage(resource: beds[indexPath.item].image)
         cell.configure(with: image)
-        cell.backgroundColor = .orange
 
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
+        let width = collectionView.frame.width
+        return CGSize(width: width, height: width)
     }
 }
