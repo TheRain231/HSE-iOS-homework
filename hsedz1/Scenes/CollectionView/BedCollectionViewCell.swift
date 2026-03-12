@@ -14,6 +14,7 @@ final class BedCollectionViewCell: UICollectionViewCell, ReusableCell {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 10
         contentView.addSubview(imageView)
         return imageView
     }()

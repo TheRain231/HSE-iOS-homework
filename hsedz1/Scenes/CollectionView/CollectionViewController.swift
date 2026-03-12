@@ -64,6 +64,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
 
     func collectionView(_ collectionView: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
         let width = collectionView.frame.width
-        return CGSize(width: width, height: width)
+        let padding = 10.0
+        return CGSize(width: width - padding, height: width - padding)
     }
 }
