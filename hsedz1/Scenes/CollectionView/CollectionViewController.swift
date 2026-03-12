@@ -57,6 +57,11 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = BedDetailViewController(bed: beds[indexPath.item])
+        present(detailVC, animated: true)
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
         let width = collectionView.frame.width
         return CGSize(width: width, height: width)

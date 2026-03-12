@@ -5,6 +5,8 @@
 //  Created by Andrey Stepanov on 24.01.2026.
 //
 
+import UIKit
+
 struct Bed {
     let title: String
     let image: ImageResource
