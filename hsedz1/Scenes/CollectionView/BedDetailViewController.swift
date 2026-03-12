@@ -14,26 +14,26 @@ final class BedDetailViewController: UIViewController {
         self.bed = bed
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     @available(*, unavailable)
-    required init?(coder: NSCoder) {
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     lazy var textView: UILabel = {
         let textView = UILabel()
         textView.text = "\(bed.title)"
-        
+
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
+
         view.addSubview(textView)
-        
+
         NSLayoutConstraint.activate([
             textView.heightAnchor.constraint(equalToConstant: 100),
             textView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -41,7 +41,6 @@ final class BedDetailViewController: UIViewController {
         ])
     }
 }
-
 
 #Preview {
     BedDetailViewController(bed: Bed.beds.first!)

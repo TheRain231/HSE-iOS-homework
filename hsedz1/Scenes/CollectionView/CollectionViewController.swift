@@ -57,7 +57,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVC = BedDetailViewController(bed: beds[indexPath.item])
         present(detailVC, animated: true)
     }
