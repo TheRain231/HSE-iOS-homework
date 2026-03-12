@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		385E7AA32F62BBA60074708C /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = 385E7AA22F62BBA60074708C /* Atlantis */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		382099112F24B85300C5CAEF /* hsedz1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hsedz1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385E7AA32F62BBA60074708C /* Atlantis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = hsedz1;
 			packageProductDependencies = (
+				385E7AA22F62BBA60074708C /* Atlantis */,
 			);
 			productName = hsedz1;
 			productReference = 382099112F24B85300C5CAEF /* hsedz1.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 382099082F24B85300C5CAEF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				385E7AA12F62BBA60074708C /* XCRemoteSwiftPackageReference "atlantis" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 382099122F24B85300C5CAEF /* Products */;
 			projectDirPath = "";
@@ -345,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		385E7AA12F62BBA60074708C /* XCRemoteSwiftPackageReference "atlantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProxymanApp/atlantis";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.34.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		385E7AA22F62BBA60074708C /* Atlantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 385E7AA12F62BBA60074708C /* XCRemoteSwiftPackageReference "atlantis" */;
+			productName = Atlantis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 382099092F24B85300C5CAEF /* Project object */;
 }
