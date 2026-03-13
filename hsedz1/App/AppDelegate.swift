@@ -5,8 +5,8 @@
 //  Created by Andrey Stepanov on 24.01.2026.
 //
 
-import UIKit
 import Atlantis
+import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
