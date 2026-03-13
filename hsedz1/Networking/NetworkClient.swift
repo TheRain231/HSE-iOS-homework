@@ -30,11 +30,9 @@ final class NetworkClient {
             throw NetworkError.invalidResponse
         }
 
-        guard let data = data as? T else {
-            throw NetworkError.emptyData
-        }
+        let result = try JSONDecoder().decode(T.self, from: data)
 
-        return data
+        return result
     }
 
     private func makeRequest(from endpoint: Endpoint) throws -> URLRequest {
@@ -42,6 +40,7 @@ final class NetworkClient {
         components.scheme = baseURL.scheme
         components.host = baseURL.host
         components.path = endpoint.path
+        components.queryItems = []
 
         guard let url = components.url else {
             throw NetworkError.invalidURL

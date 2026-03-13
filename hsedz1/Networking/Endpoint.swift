@@ -13,11 +13,11 @@ enum Endpoint {
     var path: String {
         switch self {
         case .ip:
-            "ip"
+            "/ip"
         case .geo:
-            "geo"
+            "/geo"
         case let .geoByIp(ip):
-            "\(ip)/geo"
+            "/\(ip)/geo"
         }
     }
 
